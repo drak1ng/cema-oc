@@ -63,7 +63,7 @@
 				
 				var id_usuarios = window.localStorage.getItem('id_usuarios');
 				
-				$.get("http://cema.projetotemporario.com.br/app_api/cancelamento.php", { id_usuarios:id_usuarios }, function(data){
+				$.get("http://cema.projetotemporario.com.br/app_api_oc/cancelamento.php", { id_usuarios:id_usuarios }, function(data){
 					$('#id_conteudo_cancelar').html(data);
 				});
 				

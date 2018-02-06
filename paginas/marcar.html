@@ -71,7 +71,7 @@
 				var horario = window.localStorage.getItem('horario');
 				
 				
-				$.get("http://cema.projetotemporario.com.br/app_api/marcar.php", { id_usuarios:id_usuarios, unidade:unidade, especialidade:especialidade, medico:medico, data:data, horario:horario }, function(data){
+				$.get("http://cema.projetotemporario.com.br/app_api_oc/marcar.php", { id_usuarios:id_usuarios, unidade:unidade, especialidade:especialidade, medico:medico, data:data, horario:horario }, function(data){
 					$('#id_marcar_horarios').html(data);
 					$('#id_marcar_horarios').enhanceWithin();
 				});

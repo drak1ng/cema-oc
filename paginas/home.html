@@ -74,7 +74,7 @@
 					$.mobile.changePage("login.html", { transition: "fade", changeHash: false });					
 				});
 				
-				$.get('http://cema.projetotemporario.com.br/app_api/lista-unidades.php', function(data){
+				$.get('http://cema.projetotemporario.com.br/app_api_oc/lista-unidades.php', function(data){
 					$('#id_conteudo_home').html(data);
 				});
 				
